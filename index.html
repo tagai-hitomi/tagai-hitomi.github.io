@@ -784,6 +784,32 @@ a.work:hover{
 .work-body{ min-width: 0; display: grid; gap: .2rem; }
 .work-body .work-date{ margin-bottom: .15rem; }
 
+/* YouTube 動画つきの公演カード（プラネタリウムなど）
+   スマホはサムネイルを上に置く縦積み、広い画面では画像を左にした横並び。 */
+.work--video{
+  display: block;
+  padding: clamp(1rem, 3.2vw, 1.35rem);
+}
+.work-video{
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 6px;
+  box-shadow:
+    0 0 0 1px rgba(231,223,210,.95),
+    0 10px 22px -14px rgba(38,35,31,.75);
+}
+.work-video .play-badge{ left: .55rem; bottom: .55rem; }
+.work--video .work-body{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .2rem;
+  margin-top: .9rem;
+}
+.work--video .work-title{ line-height: 1.5; word-break: auto-phrase; }
+.work--video .work-go{ margin-top: .35rem; }
+
 /* ---------- ボイスサンプル ---------- */
 .samples{
   display: grid;
@@ -1209,6 +1235,12 @@ a.work:hover{
   /* ポスターつきは画像を左に置く横並び */
   .work--poster{ display: flex; align-items: center; }
   .work--poster .work-poster{ width: 6.2rem; }
+  /* 動画つきはサムネイルを左に置く横並び（ポスターつきと同じリズム） */
+  .work--video{ display: flex; align-items: center; gap: clamp(1rem, 3.5vw, 1.5rem); }
+  .work--video .work-video{ flex: 0 0 auto; width: clamp(11rem, 32vw, 15.5rem); }
+  .work--video .work-body{ margin-top: 0; }
+  .work-video .play-badge{ left: .4rem; bottom: .4rem; width: 1.4rem; height: 1.4rem; }
+  .work-video .play-badge svg{ width: .52rem; height: .52rem; }
   .work--poster .work-body{
     grid-template-columns: auto minmax(0, 1fr);
     column-gap: 1.6rem;
@@ -1481,6 +1513,22 @@ a.work:hover{
           </div>
         </a>
 
+        <!-- 編集ポイント: YouTube の動画はこの <a class="work work--video"> ブロックをまるごとコピーして、
+             動画ID（youtu.be/ の後ろ）とサムネイルURL・タイトルを差し替えてください。
+             サムネイルは https://i.ytimg.com/vi/動画ID/maxresdefault.jpg（無い動画は hqdefault.jpg）。 -->
+        <a class="work work--video" href="https://youtu.be/ujjNjz-xotU?si=yCgT00DME3yf3q4G" target="_blank" rel="noopener noreferrer">
+          <span class="work-video thumb">
+            <img src="https://i.ytimg.com/vi/ujjNjz-xotU/maxresdefault.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async"
+                 onerror="if(!this.dataset.fb){this.dataset.fb=1;this.src='https://i.ytimg.com/vi/ujjNjz-xotU/hqdefault.jpg'}else{this.classList.add('is-broken');this.removeAttribute('src')}">
+            <span class="play-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v13.72L19 12 8 5.14z"/></svg></span>
+          </span>
+          <div class="work-body">
+            <h3 class="work-title">『BELLA GAIA』〜美しい地球のシンフォニー〜</h3>
+            <p class="work-meta">プラネタリウム</p>
+            <p class="work-go">YouTube で聴く <span aria-hidden="true">↗</span></p>
+          </div>
+        </a>
+
         <!-- 編集ポイント: 次の公演はここに追加（上のブロックをコピー） -->
       </div>
     </div>
@@ -1497,7 +1545,7 @@ a.work:hover{
       <div class="sec-head">
         <p class="sec-label">04 — Voice Samples</p>
         <h2 class="sec-title" id="samples-title">ボイスサンプル</h2>
-        <p class="sec-lead">セリフ・ナレーション・予告を、それぞれ30〜60秒ほどで。音声サンプルは、タップすると Google ドライブが開きます。</p>
+        <p class="sec-lead">タップすると Google ドライブが開きます。</p>
       </div>
 
       <ul class="samples" id="sample-list">
@@ -1575,24 +1623,9 @@ a.work:hover{
             <span class="sample-ext" aria-hidden="true">聴く ↗</span>
           </a>
         </li>
-        <li class="sample sample--wide">
-          <!-- 編集ポイント: YouTube のサムネイルは https://i.ytimg.com/vi/動画ID/maxresdefault.jpg（無い動画は hqdefault.jpg） -->
-          <a class="sample-link sample-link--thumb" href="https://youtu.be/ujjNjz-xotU?si=yCgT00DME3yf3q4G" target="_blank" rel="noopener noreferrer">
-            <span class="thumb">
-              <img src="https://i.ytimg.com/vi/ujjNjz-xotU/maxresdefault.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async"
-                   onerror="if(!this.dataset.fb){this.dataset.fb=1;this.src='https://i.ytimg.com/vi/ujjNjz-xotU/hqdefault.jpg'}else{this.classList.add('is-broken');this.removeAttribute('src')}">
-              <span class="play-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v13.72L19 12 8 5.14z"/></svg></span>
-            </span>
-            <span class="sample-body">
-              <span class="sample-title">『BELLA GAIA』〜美しい地球のシンフォニー〜</span>
-              <span class="sample-cat">プラネタリウム</span>
-              <span class="sample-ext" aria-hidden="true">YouTube で聴く ↗</span>
-            </span>
-          </a>
-        </li>
       </ul>
 
-      <p class="sample-note">※ YouTube のサンプルは YouTube の再生画面が開きます。環境によっては Google アカウントへのログインを求められることがあります。</p>
+      <p class="sample-note">※ 環境によっては Google アカウントへのログインを求められることがあります。</p>
     </div>
   </section>
 
