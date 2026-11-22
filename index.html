@@ -1019,6 +1019,57 @@ a.work:hover{
 }
 .writing-body{ display: grid; gap: .5rem; }
 
+/* 執筆：マガジンカードと、その下に続く無料サンプル一覧 */
+.writing{ display: grid; gap: .7rem; max-width: 54rem; }
+.writing-samples{
+  padding: 1rem clamp(1.25rem, 4vw, 1.8rem) .85rem;
+  background: linear-gradient(0deg, rgba(124,138,116,.05), rgba(124,138,116,.05)), var(--paper-card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+.writing-samples-label{
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  margin: 0 0 .3rem;
+  font-family: var(--latin);
+  font-size: .68rem;
+  letter-spacing: .2em;
+  color: var(--ink-faint);
+}
+.writing-samples-label::after{
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+.writing-samples-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.writing-samples-list li + li{ border-top: 1px dashed var(--line); }
+.writing-samples-list a{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: .5rem 0;
+  font-size: .8125rem;
+  line-height: 1.7;
+  color: var(--ink);
+  text-decoration: none;
+}
+.writing-samples-list a:hover{ color: var(--accent-ink); }
+.writing-samples-name{ min-width: 0; }
+.writing-samples-ext{
+  flex: none;
+  font-size: .75rem;
+  color: var(--accent-ink);
+  transition: transform .2s ease;
+}
+.writing-samples-list a:hover .writing-samples-ext{ transform: translate(1px, -1px); }
+
 /* ---------- お問い合わせ・SNS ---------- */
 .contact{
   display: grid;
@@ -1586,19 +1637,46 @@ a.work:hover{
       </div>
 
       <!-- 編集ポイント: 連載や記事を増やすときは、このブロックをコピー。
-           左の表紙は note の og:image（マガジンのヘッダー画像）です。 -->
-      <a class="writing-card" href="https://note.com/tagai_hitomino/m/m80100d2c896b" target="_blank" rel="noopener noreferrer">
-        <span class="writing-thumb thumb">
-          <img src="https://assets.st-note.com/production/uploads/images/279260809/e4ee84ca984e6b9d4aec1f57e6df0035.png?fit=bounds&amp;format=jpeg&amp;height=1024&amp;quality=85&amp;width=1024" alt="" width="1024" height="536" loading="lazy" decoding="async"
-               onerror="this.classList.add('is-broken');this.removeAttribute('src')">
-        </span>
-        <div class="writing-body">
-          <span class="writing-kicker">note — 有料マガジン</span>
-          <h3 class="writing-title">ボイスサンプル台本集</h3>
-          <p class="writing-desc">30〜60秒のボイスサンプル用台本をまとめたマガジン。セリフとナレーション、性別を問わず使えます。初回のみ300円（月額ではありません）。商用利用可・クレジット任意・語尾や言い回しの変更可。AI学習・AI音声への使用、再配布はご遠慮いただいています。</p>
-          <span class="writing-go">マガジンを読む <span aria-hidden="true">↗</span></span>
+           左の表紙は note の og:image（マガジンのヘッダー画像）です。
+           下の無料サンプルは、無料公開の記事が増えたら <li> をコピーして追加します。 -->
+      <div class="writing">
+        <a class="writing-card" href="https://note.com/tagai_hitomino/m/m80100d2c896b" target="_blank" rel="noopener noreferrer">
+          <span class="writing-thumb thumb">
+            <img src="https://assets.st-note.com/production/uploads/images/279260809/e4ee84ca984e6b9d4aec1f57e6df0035.png?fit=bounds&amp;format=jpeg&amp;height=1024&amp;quality=85&amp;width=1024" alt="" width="1024" height="536" loading="lazy" decoding="async"
+                 onerror="this.classList.add('is-broken');this.removeAttribute('src')">
+          </span>
+          <div class="writing-body">
+            <span class="writing-kicker">note — 有料マガジン</span>
+            <h3 class="writing-title">ボイスサンプル台本集</h3>
+            <p class="writing-desc">30〜60秒のボイスサンプル用台本をまとめたマガジン。セリフとナレーション、性別を問わず使えます。初回のみ300円（月額ではありません）。商用利用可・クレジット任意・語尾や言い回しの変更可。AI学習・AI音声への使用、再配布はご遠慮いただいています。</p>
+            <span class="writing-go">マガジンを読む <span aria-hidden="true">↗</span></span>
+          </div>
+        </a>
+
+        <div class="writing-samples" role="group" aria-labelledby="writing-samples-title">
+          <p class="writing-samples-label" id="writing-samples-title">無料サンプル</p>
+          <ul class="writing-samples-list">
+            <li>
+              <a href="https://note.com/tagai_hitomino/n/nc567663abb45" target="_blank" rel="noopener noreferrer">
+                <span class="writing-samples-name">ナレーションサンプル台本『スタイリッシュなファッション番組』</span>
+                <span class="writing-samples-ext" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://note.com/tagai_hitomino/n/n9059a8be7faf" target="_blank" rel="noopener noreferrer">
+                <span class="writing-samples-name">ナレーションサンプル台本『初めてのデート』音声広告</span>
+                <span class="writing-samples-ext" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://note.com/tagai_hitomino/n/n44919df12202" target="_blank" rel="noopener noreferrer">
+                <span class="writing-samples-name">ボイスサンプル台本『戦禍の友情』40代〜</span>
+                <span class="writing-samples-ext" aria-hidden="true">↗</span>
+              </a>
+            </li>
+          </ul>
         </div>
-      </a>
+      </div>
     </div>
   </section>
 
