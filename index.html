@@ -1,0 +1,1924 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>互ひとみ｜ナレーター・声優・俳優・モデル</title>
+<meta name="description" content="互ひとみ（Tagai Hitomi）のポートフォリオ。ナレーター・声優・俳優・モデル。作品の味を引き立て、そっと支える。白ご飯系パフォーマーです。ボイスサンプル、朗読、出演情報、執筆。">
+<meta name="theme-color" content="#faf7f1">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="互ひとみ｜ナレーター・声優・俳優・モデル">
+<meta property="og:description" content="作品の味を引き立て、そっと支える。白ご飯系パフォーマーです。ボイスサンプル、朗読、出演情報、執筆。">
+<meta property="og:locale" content="ja_JP">
+
+<!-- ファビコン（画像ファイル不要。色を変えたいときは下の fill の値を変更） -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23a3563a'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%23faf7f1'/%3E%3C/svg%3E">
+
+<!-- 編集ポイント: フォント。Google Fonts が読めない環境では端末の游明朝／ヒラギノ明朝・ヒラギノ角ゴに自動で切り替わります。 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;500;600&display=swap">
+
+<style>
+/* =========================================================
+   互ひとみ ポートフォリオ — スタイル
+   色や余白は下の :root の値だけ変えれば全体に反映されます。
+   ========================================================= */
+:root{
+  /* 色 */
+  --paper:      #faf7f1;   /* 背景（温かいオフホワイト） */
+  --paper-card: #fffdf9;   /* カード面 */
+  --ink:        #26231f;   /* 本文（チャコール） */
+  --ink-soft:   #5d564c;   /* 補助テキスト */
+  --ink-faint:  #8c8377;   /* ラベル・キャプション */
+  --line:       #e7dfd2;   /* 罫線 */
+  --line-soft:  #f0eade;
+  --accent:     #a3563a;   /* テラコッタ */
+  --accent-ink: #8a4128;   /* アクセント濃 */
+  --accent-wash:#f2e4d8;   /* アクセント淡 */
+  --sage:       #7c8a74;   /* セージ（副アクセント） */
+
+  /* 文字組み */
+  --serif: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", "MS PMincho", serif;
+  --sans:  "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Meiryo", system-ui, -apple-system, sans-serif;
+  --latin: "Helvetica Neue", Arial, var(--sans);
+
+  /* 余白・幅 */
+  --wrap: 74rem;
+  --narrow: 44rem;
+  --pad: clamp(1.25rem, 5vw, 2.5rem);
+  --nav-h: 3.25rem;
+  --radius: 14px;
+  --shadow: 0 1px 2px rgba(38,35,31,.04), 0 10px 30px -18px rgba(38,35,31,.22);
+}
+
+*,*::before,*::after{ box-sizing: border-box; }
+
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--nav-h) + .75rem);
+  -webkit-text-size-adjust: 100%;
+}
+
+body{
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.9;
+  letter-spacing: .02em;
+  -webkit-font-smoothing: antialiased;
+  overflow-wrap: break-word;
+}
+
+img{ max-width: 100%; height: auto; display: block; }
+
+a{ color: var(--accent-ink); text-decoration-thickness: .06em; text-underline-offset: .18em; }
+a:hover{ color: var(--accent); }
+
+:focus-visible{
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* 画面読み上げ用 */
+.sr-only{
+  position: absolute; width: 1px; height: 1px;
+  margin: -1px; padding: 0; border: 0;
+  clip: rect(0 0 0 0); clip-path: inset(50%); overflow: hidden; white-space: nowrap;
+}
+
+.skip-link{
+  position: absolute; left: .75rem; top: -4rem; z-index: 100;
+  background: var(--ink); color: #fff; padding: .6rem 1rem;
+  border-radius: 8px; text-decoration: none; font-size: .875rem;
+  transition: top .2s ease;
+}
+.skip-link:focus{ top: .75rem; color: #fff; }
+
+.wrap{
+  width: 100%;
+  max-width: var(--wrap);
+  margin-inline: auto;
+  padding-inline: var(--pad);
+}
+
+/* ---------- 見出しの共通形 ---------- */
+.sec{ padding-block: clamp(3rem, 7vw, 5rem); }
+.sec + .sec{ border-top: 1px solid var(--line-soft); }
+
+.sec-head{ margin-bottom: clamp(1.5rem, 4vw, 2.5rem); }
+
+.sec-label{
+  display: flex; align-items: center; gap: .7rem;
+  margin: 0 0 .55rem;
+  font-family: var(--latin);
+  font-size: .7rem;
+  letter-spacing: .26em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+.sec-label::after{
+  content: ""; flex: 1 1 auto; height: 1px;
+  background: linear-gradient(to right, var(--line), transparent);
+}
+
+.sec-title{
+  margin: 0;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(1.5rem, 5.2vw, 2.05rem);
+  line-height: 1.35;
+  letter-spacing: .06em;
+}
+
+.sec-lead{
+  margin: .7rem 0 0;
+  color: var(--ink-soft);
+  font-size: .9375rem;
+  line-height: 1.85;
+}
+
+/* ---------- ヘッダー（ヒーロー） ---------- */
+.hero{
+  position: relative;
+  padding-block: clamp(3rem, 11vw, 7rem) clamp(2.25rem, 7vw, 4rem);
+  overflow: hidden;
+}
+.hero::before{ /* 背景の淡い円 */
+  content: "";
+  position: absolute;
+  inset: -30% -10% auto auto;
+  width: min(68vw, 34rem);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 50%, rgba(163,86,58,.10), rgba(163,86,58,0) 68%);
+  pointer-events: none;
+}
+.hero .wrap{ position: relative; }
+
+.hero-eyebrow{
+  margin: 0 0 clamp(1rem, 3vw, 1.6rem);
+  font-family: var(--latin);
+  font-size: .7rem;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.hero-name{
+  margin: 0;
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: clamp(2.6rem, 12vw, 4.6rem);
+  line-height: 1.1;
+  letter-spacing: .08em;
+}
+.hero-name-latin{
+  display: block;
+  margin-top: .55rem;
+  font-family: var(--latin);
+  font-size: clamp(.72rem, 2.4vw, .84rem);
+  font-weight: 400;
+  letter-spacing: .34em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.hero-roles{
+  margin: clamp(1.1rem, 3.5vw, 1.6rem) 0 0;
+  display: flex; flex-wrap: wrap; align-items: center;
+  gap: .45rem .8rem;
+  padding: 0; list-style: none;
+  font-size: .9rem;
+  letter-spacing: .1em;
+  color: var(--ink-soft);
+}
+.hero-roles li{ display: flex; align-items: center; gap: .8rem; }
+.hero-roles li + li::before{
+  content: "";
+  width: 3px; height: 3px; border-radius: 50%;
+  background: var(--sage);
+  display: inline-block;
+}
+
+.hero-catch{
+  margin: clamp(1.5rem, 4.5vw, 2.2rem) 0 0;
+  padding-left: 1rem;
+  border-left: 2px solid var(--accent);
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(1.05rem, 3.9vw, 1.4rem);
+  line-height: 1.9;
+  letter-spacing: .08em;
+  max-width: 30em;
+}
+
+.hero-actions{
+  margin-top: clamp(1.75rem, 5vw, 2.5rem);
+  display: flex; flex-wrap: wrap; gap: .7rem;
+}
+
+/* ---------- ヒーローのポートレート ---------- */
+.hero-inner{
+  display: grid;
+  gap: clamp(1.5rem, 4.5vw, 2.5rem);
+  align-items: center;
+}
+.hero-photo{
+  order: -1;
+  justify-self: start;
+  width: clamp(8.5rem, 30vw, 10.5rem);
+  aspect-ratio: 396 / 400;
+  overflow: hidden;
+  border-radius: 50%;
+  background: var(--accent-wash);
+  box-shadow: 0 0 0 1px var(--line), 0 14px 34px -22px rgba(38,35,31,.55);
+}
+.hero-photo img{
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center 18%;
+}
+
+/* ---------- ボタン ---------- */
+.btn{
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  min-height: 2.9rem;
+  padding: .55rem 1.35rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper-card);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: .875rem;
+  font-weight: 500;
+  letter-spacing: .08em;
+  text-decoration: none;
+  transition: background-color .2s ease, border-color .2s ease, color .2s ease, transform .2s ease;
+}
+.btn:hover{ border-color: var(--accent); color: var(--accent-ink); transform: translateY(-1px); }
+.btn--primary{
+  background: var(--ink);
+  border-color: var(--ink);
+  color: #fdfbf7;
+}
+.btn--primary:hover{ background: var(--accent-ink); border-color: var(--accent-ink); color: #fff; }
+.btn--ghost{ background: transparent; }
+.btn .arrow{ font-size: .8em; opacity: .7; }
+
+/* ---------- 追従ナビ ---------- */
+.nav{
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(250,247,241,.95);
+  -webkit-backdrop-filter: saturate(160%) blur(10px);
+  backdrop-filter: saturate(160%) blur(10px);
+  border-top: 1px solid var(--line-soft);
+  border-bottom: 1px solid var(--line);
+}
+.nav-inner{
+  display: flex; align-items: center;
+  gap: .25rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.nav-inner::-webkit-scrollbar{ display: none; }
+
+.nav-link{
+  position: relative;
+  flex: 0 0 auto;
+  display: inline-flex; align-items: center;
+  min-height: var(--nav-h);
+  padding: 0 .85rem;
+  color: var(--ink-soft);
+  font-size: .8125rem;
+  letter-spacing: .08em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.nav-link::after{
+  content: "";
+  position: absolute; left: .85rem; right: .85rem; bottom: 0;
+  height: 2px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .2s ease;
+}
+.nav-link:hover{ color: var(--ink); }
+.nav-link[aria-current="true"]{ color: var(--ink); font-weight: 500; }
+.nav-link[aria-current="true"]::after{ transform: scaleX(1); }
+.nav-link:first-child{ padding-left: 0; }
+.nav-link:first-child::after{ left: 0; }
+
+/* ---------- 更新情報（Updates） ----------
+   ヒーローのすぐ下に置く、サイトの更新履歴。
+   新しい行を上に足していくと、いちばん上が最新になります。
+   一度にたくさん並ぶと縦に長くなるので、行の高さは詰めています。 */
+.updates{ padding-top: clamp(1.5rem, 4vw, 2.25rem); }
+
+.updates-card{
+  padding: clamp(1rem, 3vw, 1.3rem) clamp(1.1rem, 3.6vw, 1.55rem);
+  background: var(--paper-card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.updates-head{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: .1rem .7rem;
+  margin-bottom: .35rem;
+}
+.updates-label{
+  margin: 0;
+  font-family: var(--latin);
+  font-size: .62rem;
+  letter-spacing: .26em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+.updates-title{
+  margin: 0;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: .95rem;
+  letter-spacing: .14em;
+}
+
+.updates-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+}
+/* 日付と本文は横並び。幅が足りないときは本文が自動で次の行へ回り込み、
+   中途半端な位置で折り返さないようにしています。 */
+.update{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: .05rem .85rem;
+  padding-block: .55rem;
+  border-top: 1px solid var(--line-soft);
+}
+.update-date{
+  flex: 0 0 auto;
+  font-family: var(--latin);
+  font-size: .72rem;
+  letter-spacing: .1em;
+  font-variant-numeric: tabular-nums;
+  color: var(--accent-ink);
+  white-space: nowrap;
+}
+.update-text{
+  flex: 1 1 16rem;
+  min-width: 0;
+  margin: 0;
+  font-family: var(--serif);
+  font-size: .9rem;
+  line-height: 1.7;
+  letter-spacing: .04em;
+  color: var(--ink-soft);
+}
+.update-text a{
+  color: var(--accent-ink);
+  text-decoration: underline;
+  text-decoration-thickness: .06em;
+  text-underline-offset: .16em;
+}
+
+/* 広い画面では、更新情報は詰まった小さめの帯にしておく（本文を押し下げない） */
+@media (min-width: 40rem){
+  .updates-card{ max-width: 46rem; }
+}
+
+/* ---------- カード共通 ---------- */
+.card{
+  background: var(--paper-card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* ---------- サムネイル（動画・公演・記事の画像まわり） ----------
+   画像が読めないときも、淡いグラデーションが残るだけなので崩れません。 */
+.thumb{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, rgba(163,86,58,.18), rgba(124,138,116,.18)),
+    var(--accent-wash);
+}
+.thumb img{
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.thumb img.is-broken{ display: none; }
+
+/* 画像の左下に置く小さな再生マーク */
+.play-badge{
+  position: absolute;
+  left: .4rem; bottom: .4rem;
+  display: grid; place-items: center;
+  width: 1.5rem; height: 1.5rem;
+  border-radius: 50%;
+  background: rgba(250,247,241,.93);
+  color: var(--ink);
+  box-shadow: 0 2px 8px rgba(38,35,31,.35);
+  pointer-events: none;
+}
+.play-badge svg{ width: .58rem; height: .58rem; margin-left: .1rem; }
+
+/* ---------- プロフィール ---------- */
+.profile{
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 2.5rem);
+}
+/* 段落の間は空行を入れず、行間（line-height）だけで区切ります。段落が増えても同じ間隔です。 */
+.profile-body p{ margin: 0; }
+
+/* プロフィール本文：段落が増えてもすべて同じ明朝体・同じサイズ／行間でそろいます。 */
+.profile-body p,
+.profile-lead{
+  font-family: var(--serif);
+  font-size: clamp(1rem, 3.2vw, 1.1rem);
+  line-height: 2;
+  letter-spacing: .05em;
+}
+
+.facts{
+  margin: 0;
+  padding: clamp(1.15rem, 4vw, 1.6rem);
+  display: grid;
+  gap: .1rem;
+  background: var(--paper-card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+.facts div{
+  display: grid;
+  grid-template-columns: 5.2em 1fr;
+  gap: .75rem;
+  padding-block: .68rem;
+  border-bottom: 1px solid var(--line-soft);
+}
+.facts div:last-child{ border-bottom: 0; }
+.facts dt{
+  font-size: .75rem;
+  letter-spacing: .14em;
+  color: var(--ink-faint);
+  padding-top: .18rem;
+}
+.facts dd{
+  margin: 0;
+  font-size: .9375rem;
+  line-height: 1.75;
+}
+.facts .fact-list{
+  margin: 0;
+  padding-left: 1.1em;
+  list-style: disc;
+}
+.facts .fact-list li{ padding-left: .1em; }
+.facts .fact-list li::marker{ color: var(--sage); }
+
+/* ---------- ギャラリー（写真ポートフォリオ） ----------
+   写真は横に流れる帯（カルーセル）にして、指でスワイプ／横スクロールして見ます。
+   ・スマホ：1枚を画面幅の76%にして、次の写真が右端に少しのぞくようにしています。
+   ・PC：2枚がちょうど収まる幅。写真が増えると横にスクロールでき、
+     収まっていないときだけ見出しの右に前後ボタンが出ます。
+   縦長・横長・正方形のどの写真も object-fit: cover で同じ枠にそろえ、
+   顔が切れないように object-position を写真ごとに調整できます。 */
+.gallery{
+  --gal-gap: clamp(.9rem, 2.6vw, 1.5rem);
+  display: flex;
+  align-items: stretch;
+  gap: var(--gal-gap);
+  /* 画面の端まで写真が流れるように、左右の余白ぶんだけ外へ広げる */
+  margin: 0 calc(var(--pad) * -1);
+  padding: .4rem var(--pad) .9rem;
+  list-style: none;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scroll-padding-inline: var(--pad);
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  /* スクロールバーは細く控えめに（端末によっては非表示） */
+  scrollbar-width: thin;
+  scrollbar-color: #d8cdba transparent;
+}
+.gallery::-webkit-scrollbar{ height: 6px; }
+.gallery::-webkit-scrollbar-track{ background: transparent; }
+.gallery::-webkit-scrollbar-thumb{
+  background: #d8cdba;
+  border-radius: 999px;
+}
+.gallery:focus-visible{ outline-offset: 2px; border-radius: 10px; }
+
+.gallery-item{
+  flex: 0 0 76%;
+  min-width: 0;
+  scroll-snap-align: start;
+}
+
+/* 見出しの右に置く「前へ／次へ」ボタン（写真が収まらないときだけ表示） */
+.sec-head--row{
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  column-gap: 1rem;
+}
+.sec-head--row .sec-label{ grid-area: 1 / 1 / 2 / -1; }
+.sec-head--row .sec-title{ grid-area: 2 / 1 / 3 / 2; }
+.sec-head--row .sec-lead{ grid-area: 3 / 1 / 4 / -1; }
+.sec-head--row .gallery-ctrl{
+  grid-area: 2 / 2 / 3 / 3;
+  align-self: center;
+  justify-self: end;
+}
+
+.gallery-ctrl{
+  display: flex;
+  gap: .4rem;
+}
+.gallery-ctrl[hidden]{ display: none; }
+
+.gallery-btn{
+  appearance: none;
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--paper-card);
+  color: var(--ink);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: border-color .18s ease, color .18s ease, background-color .18s ease, opacity .18s ease;
+}
+.gallery-btn:hover:not(:disabled){
+  border-color: var(--accent);
+  color: var(--accent-ink);
+  background: var(--accent-wash);
+}
+.gallery-btn:disabled{ opacity: .3; cursor: default; }
+.gallery-btn svg{ width: 1rem; height: 1rem; }
+
+.gallery-fig{
+  margin: 0;
+  display: grid;
+  gap: .7rem;
+}
+
+.gallery-open{
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 10px;
+  background: var(--accent-wash);
+  color: inherit;
+  cursor: zoom-in;
+  box-shadow: var(--shadow);
+  -webkit-tap-highlight-color: transparent;
+}
+.gallery-open img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 12%;
+  transition: transform .5s ease;
+}
+/* 舞台写真は人物が上寄りなので、上を残して切り抜く */
+.gallery-open--stage img{ object-position: 50% 24%; }
+.gallery-open:hover img{ transform: scale(1.03); }
+.gallery-open:focus-visible{ outline: 2px solid var(--paper); outline-offset: -4px; }
+
+/* 拡大できることを示す小さな虫めがね */
+.gallery-zoom{
+  position: absolute;
+  right: .55rem;
+  bottom: .55rem;
+  display: grid;
+  place-items: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 50%;
+  background: rgba(250, 247, 241, .9);
+  color: var(--ink);
+  box-shadow: 0 2px 10px rgba(38, 35, 31, .28);
+  pointer-events: none;
+}
+.gallery-zoom svg{ width: .85rem; height: .85rem; }
+
+/* 写真の説明 */
+.gallery-cap{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: .15rem .6rem;
+  margin: 0;
+  font-family: var(--serif);
+  font-size: .8125rem;
+  line-height: 1.7;
+  letter-spacing: .06em;
+  color: var(--ink-soft);
+}
+.gallery-cap-latin{
+  font-family: var(--latin);
+  font-size: .62rem;
+  letter-spacing: .24em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+/* ---------- 写真の拡大表示（ライトボックス） ---------- */
+.is-locked{ overflow: hidden; }
+
+.lightbox{
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: grid;
+  place-items: center;
+  padding: clamp(1rem, 4vw, 2.5rem);
+  background: rgba(24, 21, 18, .9);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+.lightbox[hidden]{ display: none; }
+
+.lightbox-figure{
+  margin: 0;
+  display: grid;
+  justify-items: center;
+  gap: .8rem;
+  max-width: 100%;
+  max-height: 100%;
+}
+.lightbox-figure img{
+  max-width: min(92vw, 58rem);
+  max-height: calc(100vh - 9rem);
+  max-height: calc(100dvh - 9rem);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 20px 60px -24px rgba(0, 0, 0, .8);
+}
+.lightbox-cap{
+  font-family: var(--latin);
+  font-size: .68rem;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: #ded6c9;
+}
+
+.lightbox-btn{
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border: 1px solid rgba(250, 247, 241, .35);
+  border-radius: 50%;
+  background: rgba(250, 247, 241, .12);
+  color: #faf7f1;
+  cursor: pointer;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  transition: background-color .18s ease, border-color .18s ease;
+}
+.lightbox-btn:hover{ background: rgba(250, 247, 241, .26); border-color: rgba(250, 247, 241, .6); }
+.lightbox-btn:focus-visible{ outline: 2px solid #faf7f1; outline-offset: 2px; }
+.lightbox-btn[hidden]{ display: none; }
+.lightbox-btn svg{ width: 1.05rem; height: 1.05rem; }
+
+.lightbox-close{ top: clamp(.75rem, 2.5vw, 1.4rem); right: clamp(.75rem, 2.5vw, 1.4rem); }
+.lightbox-nav{ top: 50%; transform: translateY(-50%); }
+.lightbox-prev{ left: clamp(.5rem, 2vw, 1.4rem); }
+.lightbox-next{ right: clamp(.5rem, 2vw, 1.4rem); }
+
+/* ---------- 出演情報 ---------- */
+.works{ display: grid; gap: .9rem; max-width: 54rem; }
+
+.work{
+  display: grid;
+  gap: .35rem .9rem;
+  padding: clamp(1.1rem, 3.6vw, 1.5rem);
+  background: var(--paper-card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: inherit;
+  text-decoration: none;
+  transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+a.work:hover{
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px -20px rgba(38,35,31,.5);
+  color: inherit;
+}
+.work-date{
+  font-family: var(--latin);
+  font-size: .74rem;
+  letter-spacing: .16em;
+  color: var(--accent-ink);
+}
+.work-title{
+  margin: 0;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(1.1rem, 4vw, 1.3rem);
+  letter-spacing: .06em;
+}
+.work-meta{
+  margin: 0;
+  font-size: .8125rem;
+  color: var(--ink-soft);
+  letter-spacing: .04em;
+}
+.work-go{
+  margin-top: .35rem;
+  font-size: .8125rem;
+  color: var(--accent-ink);
+  letter-spacing: .08em;
+}
+
+/* ポスター画像つきの公演カード */
+.work--poster{
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 3.5vw, 1.5rem);
+  padding: clamp(1rem, 3.2vw, 1.35rem);
+}
+.work-poster{
+  flex: 0 0 auto;
+  align-self: center;
+  width: 5.2rem;
+  aspect-ratio: 537 / 760;
+  border-radius: 5px;
+  box-shadow:
+    0 0 0 1px rgba(231,223,210,.95),
+    0 10px 22px -14px rgba(38,35,31,.75);
+}
+.work-body{ min-width: 0; display: grid; gap: .2rem; }
+.work-body .work-date{ margin-bottom: .15rem; }
+
+/* ---------- ボイスサンプル ---------- */
+.samples{
+  display: grid;
+  gap: .75rem;
+  grid-template-columns: 1fr;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.sample{ display: flex; }
+
+.sample-link{
+  display: flex; align-items: center; gap: .9rem;
+  width: 100%;
+  padding: .95rem 1.05rem;
+  background: var(--paper-card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: inherit;
+  text-decoration: none;
+  transition: border-color .2s ease, transform .2s ease, background-color .2s ease;
+}
+.sample-link:hover{
+  border-color: var(--accent);
+  transform: translateY(-1px);
+  color: inherit;
+}
+
+.sample-icon{
+  flex: 0 0 auto;
+  display: grid; place-items: center;
+  width: 2.45rem; height: 2.45rem;
+  border-radius: 50%;
+  background: var(--accent-wash);
+  color: var(--accent-ink);
+}
+.sample-icon svg{ width: 1rem; height: 1rem; }
+
+.sample-text{ min-width: 0; flex: 1 1 auto; }
+.sample-title{
+  display: block;
+  word-break: auto-phrase;   /* 対応ブラウザでは日本語を文節で折り返す */
+  font-family: var(--serif);
+  font-size: 1rem;
+  letter-spacing: .06em;
+  line-height: 1.55;
+}
+.sample-cat{
+  display: block;
+  margin-top: .1rem;
+  font-size: .72rem;
+  letter-spacing: .12em;
+  color: var(--ink-faint);
+}
+.sample-ext{
+  flex: 0 0 auto;
+  font-size: .7rem;
+  letter-spacing: .08em;
+  color: var(--ink-faint);
+}
+
+/* サムネイルつきのサンプル（YouTube） */
+.sample-link--thumb{
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.sample-link--thumb .thumb{
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+.sample-link--thumb .sample-body{
+  display: block;
+  padding: .95rem 1.05rem 1.05rem;
+}
+.sample-link--thumb .sample-ext{
+  display: block;
+  margin-top: .5rem;
+}
+.sample-link--thumb .play-badge{
+  left: .55rem; bottom: .55rem;
+  width: 2.1rem; height: 2.1rem;
+}
+.sample-link--thumb .play-badge svg{ width: .8rem; height: .8rem; }
+
+.sample-note{
+  margin: 1.1rem 0 0;
+  font-size: .8125rem;
+  color: var(--ink-soft);
+  line-height: 1.8;
+}
+
+/* ---------- 朗読・ラジオ ---------- */
+.reading{ display: grid; gap: clamp(1rem, 3vw, 1.5rem); }
+
+.video-card{
+  display: flex; align-items: center; gap: 1rem;
+  padding: clamp(1rem, 3.4vw, 1.3rem);
+  background: var(--paper-card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: inherit;
+  text-decoration: none;
+  transition: border-color .2s ease, transform .2s ease;
+}
+.video-card:hover{ border-color: var(--accent); transform: translateY(-2px); color: inherit; }
+.video-thumb{
+  position: relative;
+  flex: 0 0 auto;
+  align-self: center;
+  width: 6.5rem;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, rgba(163,86,58,.22), rgba(124,138,116,.22)),
+    var(--accent-wash);
+}
+.video-body{ min-width: 0; }
+.video-label{
+  display: block;
+  font-size: .7rem;
+  letter-spacing: .16em;
+  color: var(--ink-faint);
+}
+.video-title{
+  display: block;
+  margin-top: .15rem;
+  font-family: var(--serif);
+  font-size: clamp(.98rem, 3.4vw, 1.08rem);
+  line-height: 1.6;
+  letter-spacing: .05em;
+  word-break: auto-phrase;   /* 対応ブラウザでは日本語を文節で折り返す */
+}
+
+.podcast{
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-areas:
+    "cover title"
+    "links links";
+  align-items: center;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  max-width: 54rem;
+  padding: clamp(1.1rem, 3.6vw, 1.5rem);
+  background: var(--paper-card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+.podcast-cover{
+  grid-area: cover;
+  width: 5.5rem;
+  aspect-ratio: 1 / 1;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--accent-wash);
+}
+.podcast-cover img{
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+.podcast-title{
+  grid-area: title;
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  letter-spacing: .07em;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.podcast-note{
+  margin: .35rem 0 0;
+  font-size: .8125rem;
+  color: var(--ink-soft);
+}
+.podcast-links{
+  grid-area: links;
+  display: grid; gap: .55rem;
+  margin-top: 0;
+}
+/* スマホでは3つのリンクを同じ幅で縦に並べる（押しやすく、右端もそろう） */
+.podcast-links .btn{ justify-content: space-between; }
+
+/* ---------- 執筆 ---------- */
+.writing-card{
+  display: grid;
+  gap: .9rem;
+  max-width: 54rem;
+  padding: clamp(1.25rem, 4vw, 1.8rem);
+  background: var(--paper-card);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--sage);
+  border-radius: var(--radius);
+  color: inherit;
+  text-decoration: none;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.writing-card:hover{ transform: translateY(-2px); color: inherit; box-shadow: var(--shadow); }
+.writing-kicker{
+  font-family: var(--latin);
+  font-size: .7rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+.writing-title{
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(1.2rem, 4.4vw, 1.5rem);
+  font-weight: 500;
+  letter-spacing: .06em;
+}
+.writing-desc{
+  margin: 0;
+  font-size: .875rem;
+  line-height: 1.85;
+  color: var(--ink-soft);
+}
+.writing-go{
+  margin-top: .3rem;
+  font-size: .8125rem;
+  letter-spacing: .08em;
+  color: var(--accent-ink);
+}
+
+.writing-thumb{
+  border-radius: 8px;
+  aspect-ratio: 1.91 / 1;
+}
+.writing-body{ display: grid; gap: .5rem; }
+
+/* ---------- お問い合わせ・SNS ---------- */
+.contact{
+  display: grid;
+  gap: clamp(1rem, 3vw, 1.5rem);
+}
+
+.office{
+  display: grid;
+  gap: .5rem;
+  padding: clamp(1.25rem, 4vw, 1.8rem);
+  background: var(--ink);
+  color: #f6f1e8;
+  border-radius: var(--radius);
+}
+.office-label{
+  font-family: var(--latin);
+  font-size: .7rem;
+  letter-spacing: .24em;
+  text-transform: uppercase;
+  color: #c8bfb0;
+}
+.office-name{
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(1.15rem, 4vw, 1.35rem);
+  font-weight: 500;
+  letter-spacing: .08em;
+}
+.office-desc{
+  margin: 0;
+  font-size: .8125rem;
+  line-height: 1.85;
+  color: #d9d2c6;
+}
+.office .btn{
+  margin-top: .7rem;
+  justify-self: start;
+  background: #faf7f1;
+  border-color: #faf7f1;
+  color: var(--ink);
+}
+.office .btn:hover{ background: var(--accent-wash); border-color: var(--accent-wash); color: var(--accent-ink); }
+
+.sns-label{
+  font-family: var(--latin);
+  font-size: .7rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin: 0 0 .7rem;
+}
+.sns{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+  gap: .6rem;
+}
+.sns a{
+  display: flex; align-items: center; justify-content: space-between; gap: .5rem;
+  padding: .8rem 1rem;
+  background: var(--paper-card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: .875rem;
+  letter-spacing: .06em;
+  transition: border-color .2s ease, color .2s ease;
+}
+.sns a:hover{ border-color: var(--accent); color: var(--accent-ink); }
+.sns .sns-text{ display: flex; flex-direction: column; justify-content: flex-start; gap: .05rem; min-height: 2.4rem; min-width: 0; }
+.sns .sns-name{ font-weight: 500; }
+.sns .sns-desc{
+  font-size: .72rem;
+  line-height: 1.5;
+  color: var(--ink-faint);
+  letter-spacing: .06em;
+}
+.sns .sns-arrow{ color: var(--ink-faint); font-size: .8em; }
+
+/* ---------- フッター ---------- */
+.foot{
+  padding-block: clamp(2.25rem, 6vw, 3.5rem);
+  border-top: 1px solid var(--line);
+  background: var(--paper);
+}
+.foot-inner{
+  display: flex; flex-wrap: wrap; align-items: baseline;
+  gap: .5rem 1.25rem;
+  justify-content: space-between;
+}
+.foot-name{
+  font-family: var(--serif);
+  font-size: 1rem;
+  letter-spacing: .12em;
+  margin: 0;
+}
+.foot-note{
+  margin: 0;
+  font-family: var(--latin);
+  font-size: .7rem;
+  letter-spacing: .16em;
+  color: var(--ink-faint);
+  text-transform: uppercase;
+}
+
+/* ---------- 大きい画面 ---------- */
+@media (min-width: 40rem){
+  /* 朗読・ラジオ：カバーを左に置き、タイトルとリンクをその横へ */
+  .podcast{
+    grid-template-areas:
+      "cover title"
+      "cover links";
+    column-gap: 1.35rem;
+    row-gap: .35rem;
+  }
+  .podcast-cover{ width: 8.5rem; }
+  .podcast-links{ display: flex; flex-wrap: wrap; }
+  .podcast-links .btn{ justify-content: center; }
+
+  .samples{ grid-template-columns: repeat(2, 1fr); }
+  .sample--wide{ grid-column: 1 / -1; }  /* 長いタイトルのサンプルは幅いっぱいに */
+  .work{ grid-template-columns: 11rem 1fr; align-items: start; }
+  .work-date{ grid-column: 1; grid-row: 1 / span 2; padding-top: .3rem; }
+  .work-title{ grid-column: 2; grid-row: 1; }
+  .work-meta{ grid-column: 2; grid-row: 2; }
+  .work-go{ grid-column: 2; grid-row: 3; }
+
+  /* ギャラリー：余白の外への広がりを戻し、2枚ぶんの幅で並べる。
+     写真が3枚以上になると、はみ出したぶんだけ横スクロールできます。 */
+  .gallery{
+    margin-inline: 0;
+    padding-inline: 0;
+    scroll-padding-inline: 0;
+  }
+  .gallery-item{ flex: 0 0 calc((100% - var(--gal-gap)) / 2); }
+
+  /* ポスターつきは画像を左に置く横並び */
+  .work--poster{ display: flex; align-items: center; }
+  .work--poster .work-poster{ width: 6.2rem; }
+  .work--poster .work-body{
+    grid-template-columns: auto minmax(0, 1fr);
+    column-gap: 1.6rem;
+    row-gap: 0;
+    align-content: center;
+    align-items: baseline;
+  }
+  .work--poster .work-date{ padding-top: 0; }
+  .work--poster .work-go{ margin-top: .55rem; }
+
+  .video-thumb{ width: 8.5rem; }
+
+  /* サムネイルつきサンプルは画像と文を左右に */
+  .sample-link--thumb{ flex-direction: row; align-items: stretch; }
+  .sample-link--thumb .thumb{ flex: 0 0 min(42%, 24rem); width: auto; }
+  .sample-link--thumb .sample-body{
+    display: grid;
+    flex: 1 1 auto;
+    min-width: 0;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-content: center;
+    align-items: center;
+    column-gap: 1.25rem;
+    row-gap: .12rem;
+    padding: 1.2rem 1.5rem;
+  }
+  .sample-link--thumb .sample-title{ grid-column: 1; grid-row: 1; font-size: 1.12rem; }
+  .sample-link--thumb .sample-cat{ grid-column: 1; grid-row: 2; }
+  .sample-link--thumb .sample-ext{ grid-column: 2; grid-row: 1 / span 2; margin: 0; }
+
+  /* 執筆カードは表紙を左に */
+  .writing-card{
+    grid-template-columns: 15rem minmax(0, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 56rem){
+  .profile{ grid-template-columns: 1.35fr 1fr; align-items: start; }
+  .profile-body{ order: 1; }
+  .facts{ order: 2; }
+  .contact{ grid-template-columns: 1fr 1fr; align-items: start; }
+  .hero-name{ letter-spacing: .1em; }
+
+  /* ヒーローは文とポートレートを左右に */
+  .hero-inner{ grid-template-columns: minmax(0, 1fr) auto; gap: clamp(2rem, 4vw, 3.5rem); }
+  .hero-photo{
+    order: 0;
+    width: clamp(14rem, 21vw, 19rem);
+    border-radius: var(--radius);
+  }
+  .video-thumb{ width: 9.5rem; }
+}
+
+/* 動きを抑える設定への配慮 */
+@media (prefers-reduced-motion: reduce){
+  html{ scroll-behavior: auto; }
+  .gallery{ scroll-behavior: auto; scroll-snap-type: none; }
+  *,*::before,*::after{
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+  }
+  .btn:hover, .work:hover, a.work:hover, .video-card:hover, .sample-link:hover, .writing-card:hover{ transform: none; }
+}
+</style>
+</head>
+
+<body>
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<!-- =========================================================
+     ヘッダー / 名前とキャッチコピー
+     ========================================================= -->
+<header class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-text">
+      <p class="hero-eyebrow">Portfolio — Voice &amp; Stage</p>
+
+      <!-- 編集ポイント: 名前・ふりがな・肩書き -->
+      <h1 class="hero-name">互ひとみ<span class="hero-name-latin">Tagai Hitomi</span></h1>
+
+      <ul class="hero-roles" aria-label="活動分野">
+        <li>ナレーター</li>
+        <li>声優</li>
+        <li>俳優</li>
+        <li>モデル</li>
+      </ul>
+
+      <!-- 編集ポイント: キャッチコピー -->
+      <p class="hero-catch">作品の味を引き立て、<br>そっと支える。<br>白ご飯系パフォーマーです。</p>
+
+      <div class="hero-actions">
+        <a class="btn btn--primary" href="#samples">ボイスサンプルを聴く<span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn--ghost" href="https://osawa-inc.co.jp/women/tagaihitomi/" target="_blank" rel="noopener noreferrer">事務所はこちら<span class="arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+
+    <!-- 編集ポイント: プロフィール写真。portfolio/images/profile.jpg を差し替えれば更新できます。 -->
+    <div class="hero-photo">
+      <img src="images/profile.jpg" alt="互ひとみ" width="1200" height="1328" fetchpriority="high" decoding="async">
+    </div>
+  </div>
+</header>
+
+<!-- =========================================================
+     追従ナビ（セクションは下の順番で並んでいます）
+     編集ポイント: 新しいセクションを増やしたら、
+     ここに <a class="nav-link" href="#新しいID">名前</a> を一行足してください。
+     ========================================================= -->
+<nav class="nav" aria-label="ページ内メニュー">
+  <div class="wrap nav-inner">
+    <a class="nav-link" href="#profile">プロフィール</a>
+    <a class="nav-link" href="#gallery">ギャラリー</a>
+    <a class="nav-link" href="#works">出演情報</a>
+    <a class="nav-link" href="#samples">ボイスサンプル</a>
+    <a class="nav-link" href="#reading">朗読・ラジオ</a>
+    <a class="nav-link" href="#writing">執筆</a>
+    <a class="nav-link" href="#contact">お問い合わせ</a>
+  </div>
+</nav>
+
+<main id="main">
+
+  <!-- =========================================================
+       更新情報（Updates）
+       編集ポイント: サイトを更新したら、<ul class="updates-list"> の
+       いちばん上に <li class="update"> をコピーして、日付（表示用と
+       datetime の2か所）と内容を書き換えてください。新しい順に並ぶので、
+       いちばん上が最新の更新です。クリックで各欄へ飛ばしたいときは、
+       下の例のように <a href="#works">…</a> を入れるとリンクになります。
+       ========================================================= -->
+  <section class="updates" id="updates" aria-labelledby="updates-title">
+    <div class="wrap">
+      <div class="updates-card">
+        <div class="updates-head">
+          <p class="updates-label">Updates</p>
+          <h2 class="updates-title" id="updates-title">更新情報</h2>
+        </div>
+        <ul class="updates-list">
+          <!-- 更新情報追加ポイント: 新しい行を上に追加してください
+               （書き方の例・上から新しい順）
+               <li class="update">
+                 <time class="update-date" datetime="2026-12-05">2026.12.05</time>
+                 <p class="update-text"><a href="#works">出演情報</a>を更新しました。</p>
+               </li>
+               <li class="update">
+                 <time class="update-date" datetime="2026-12-01">2026.12.01</time>
+                 <p class="update-text"><a href="#samples">ボイスサンプル</a>を追加しました。</p>
+               </li>
+          -->
+          <li class="update">
+            <time class="update-date" datetime="2026-11-22">2026.11.22</time>
+            <p class="update-text">ポートフォリオサイトを公開しました。</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       01 プロフィール
+       ========================================================= -->
+  <section class="sec" id="profile" aria-labelledby="profile-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-label">01 — Profile</p>
+        <h2 class="sec-title" id="profile-title">プロフィール</h2>
+      </div>
+
+      <div class="profile">
+        <div class="profile-body">
+          <!-- 編集ポイント: 自己紹介文。段落を増やすときは <p> を追加（すべて同じ明朝体で表示されます） -->
+          <p class="profile-lead">大学在学中からナレーター活動を始め、これまで主に様々な媒体の広告広報ナレーション、声優を担当。</p>
+          <p class="profile-lead">聞き手の隣にいるかのような自然な声質と語りで、難解な内容をどんな年齢層にも分かりやすく伝えるナレーションと芝居に定評がある。</p>
+        </div>
+
+        <!-- 編集ポイント: プロフィールの箇条書き（出身・身長など） -->
+        <dl class="facts">
+          <div><dt>出身</dt><dd>東京都</dd></div>
+          <div><dt>身長</dt><dd>166.5cm</dd></div>
+          <div><dt>特技</dt><dd><ul class="fact-list"><li>歌</li><li>フラメンコ（バイレ）</li><li>カスタネット</li></ul></dd></div>
+          <div><dt>経歴</dt><dd>TV・ラジオ・WEBCM、映画・ドラマ・アニメ予告、企業VP、プラネタリウム作品など出演多数</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       02 ギャラリー（写真ポートフォリオ）
+       編集ポイント: 写真を増やすときは、下の <li class="gallery-item"> をまるごと
+       コピーして、src・alt・説明文を差し替えてください（画面には並び順で並びます）。
+       ・写真は横に流れる帯です。PCでは2枚、スマホでは1枚と少しが画面に収まり、
+         残りは横スクロール（スワイプ）で見られます。増やすほど右へ伸びます。
+       ・画像は portfolio/images/ に置き、長辺1600pxくらいにすると軽いです。
+       ・写真の縦横比が枠（4:5）と違っても object-fit: cover でそろいます。
+       ・顔が切れるときは .gallery-open img の object-position を調整してください
+         （上寄りの写真は class="gallery-open gallery-open--stage" のように一字追加）。
+
+       【大沢事務所公式プロフィールの宣材写真】
+       https://osawa-inc.co.jp/wordpress/wp-content/themes/osawa/talent/women/TagaiHitomi/TagaiHitomi.jpg
+       （132×200px の低解像度。掲載許諾が未確認のため、このページには読み込んでいません。）
+       ========================================================= -->
+  <section class="sec" id="gallery" aria-labelledby="gallery-title">
+    <div class="wrap">
+      <div class="sec-head sec-head--row">
+        <p class="sec-label">02 — Photo</p>
+        <h2 class="sec-title" id="gallery-title">ギャラリー</h2>
+        <div class="gallery-ctrl" hidden>
+          <button class="gallery-btn" type="button" data-gallery-prev aria-label="前の写真へスクロール" aria-controls="gallery-track">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+          </button>
+          <button class="gallery-btn" type="button" data-gallery-next aria-label="次の写真へスクロール" aria-controls="gallery-track">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+        <p class="sec-lead">写真を選ぶと大きく表示されます。</p>
+      </div>
+
+      <ul class="gallery" id="gallery-track" tabindex="0" aria-label="写真ギャラリー（左右にスクロールできます）">
+        <!-- 写真追加ポイント 1 -->
+        <li class="gallery-item">
+          <figure class="gallery-fig">
+            <button class="gallery-open" type="button" data-caption="Portrait｜ポートレート" aria-label="ポートレートを拡大して見る">
+              <img src="images/portrait-waist.jpg" alt="白いシャツ姿の互ひとみのポートレート" width="1100" height="1650" loading="lazy" decoding="async">
+              <span class="gallery-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/><path d="M8 10.5h5M10.5 8v5"/></svg></span>
+            </button>
+            <figcaption class="gallery-cap"><span class="gallery-cap-latin">Portrait</span>ポートレート</figcaption>
+          </figure>
+        </li>
+
+        <!-- 写真追加ポイント 2 -->
+        <li class="gallery-item">
+          <figure class="gallery-fig">
+            <button class="gallery-open gallery-open--stage" type="button" data-caption="Flamenco｜フラメンコ・バイレ" aria-label="フラメンコの舞台写真を拡大して見る">
+              <img src="images/flamenco.jpg" alt="赤い水玉のドレスとカスタネットで踊るフラメンコの舞台写真" width="1100" height="1656" loading="lazy" decoding="async">
+              <span class="gallery-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/><path d="M8 10.5h5M10.5 8v5"/></svg></span>
+            </button>
+            <figcaption class="gallery-cap"><span class="gallery-cap-latin">Flamenco</span>フラメンコ・バイレ／カスタネット</figcaption>
+          </figure>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       03 出演情報
+       編集ポイント: 公演が増えたら <a class="work"> … </a> をまるごとコピーして
+       日付・タイトル・リンクを書き換えてください（新しい順に上へ）。
+       ========================================================= -->
+  <section class="sec" id="works" aria-labelledby="works-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-label">03 — Stage</p>
+        <h2 class="sec-title" id="works-title">出演情報</h2>
+      </div>
+
+      <div class="works">
+        <!-- 編集ポイント: ポスター画像は portfolio/images/ に置いて src を合わせてください（未配置なら og:image に自動で切り替わります）。 -->
+        <a class="work work--poster" href="https://theatre-maker-zanad.studio.site/works/hikarino-ori" target="_blank" rel="noopener noreferrer">
+          <div class="work-poster thumb">
+            <img src="images/hikarino-ori.jpg" alt="舞台『光の檻』のポスター" width="537" height="760" loading="lazy" decoding="async"
+                 onerror="if(!this.dataset.fb){this.dataset.fb=1;this.src='https://storage.googleapis.com/studio-design-asset-files/projects/ogO05xnDq2/s-2121x3000_v-frms_webp_62c63086-4993-44ae-beb3-5ba698789e86.png'}else{this.classList.add('is-broken');this.removeAttribute('src')}">
+          </div>
+          <div class="work-body">
+            <p class="work-date">2026.10.07 — 10.12</p>
+            <h3 class="work-title">『光の檻』</h3>
+            <p class="work-meta">舞台／2026年10月7日〜12日</p>
+            <p class="work-go">公演詳細を見る <span aria-hidden="true">↗</span></p>
+          </div>
+        </a>
+
+        <!-- 編集ポイント: 次の公演はここに追加（上のブロックをコピー） -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       04 ボイスサンプル
+       編集ポイント: サンプルを増やすときは <li class="sample"> … </li> を
+       コピーして、タイトルとURLを差し替えてください（並び順に表示されます）。
+       長いタイトルは class="sample sample--wide" にすると幅いっぱいに広がります。
+       ========================================================= -->
+  <section class="sec" id="samples" aria-labelledby="samples-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-label">04 — Voice Samples</p>
+        <h2 class="sec-title" id="samples-title">ボイスサンプル</h2>
+        <p class="sec-lead">セリフ・ナレーション・予告を、それぞれ30〜60秒ほどで。音声サンプルは、タップすると Google ドライブが開きます。</p>
+      </div>
+
+      <ul class="samples" id="sample-list">
+        <li class="sample">
+          <a class="sample-link" href="https://drive.google.com/file/d/1fkY_RqPTYT6MLCULnMM1pqxki0Y9yCWF/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+            <span class="sample-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v13.72L19 12 8 5.14z"/></svg></span>
+            <span class="sample-text">
+              <span class="sample-title">セリフ 1</span>
+            </span>
+            <span class="sample-ext" aria-hidden="true">聴く ↗</span>
+          </a>
+        </li>
+        <li class="sample">
+          <a class="sample-link" href="https://drive.google.com/file/d/1qrFS7hlIP7QDOvZh3-HCQpyj3KoT-ppO/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+            <span class="sample-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v13.72L19 12 8 5.14z"/></svg></span>
+            <span class="sample-text">
+              <span class="sample-title">セリフ 2</span>
+            </span>
+            <span class="sample-ext" aria-hidden="true">聴く ↗</span>
+          </a>
+        </li>
+        <li class="sample">
+          <a class="sample-link" href="https://drive.google.com/file/d/1CuxuslU0W_8Uwxb-EZ9cwrmMKfEduvzG/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+            <span class="sample-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v13.72L19 12 8 5.14z"/></svg></span>
+            <span class="sample-text">
+              <span class="sample-title">セリフ 3</span>
+            </span>
+            <span class="sample-ext" aria-hidden="true">聴く ↗</span>
+          </a>
+        </li>
+
+        <li class="sample">
+          <a class="sample-link" href="https://drive.google.com/file/d/1lwntASCuk6Q0a-QeakRxFPD_hxlZ4xpU/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+            <span class="sample-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v13.72L19 12 8 5.14z"/></svg></span>
+            <span class="sample-text">
+              <span class="sample-title">ナレーション 1</span>
+            </span>
+            <span class="sample-ext" aria-hidden="true">聴く ↗</span>
+          </a>
+        </li>
+        <li class="sample">
+          <a class="sample-link" href="https://drive.google.com/file/d/1nJY2GOynNOtQddkVpM5By2NEiKNWhrnv/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+            <span class="sample-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v13.72L19 12 8 5.14z"/></svg></span>
+            <span class="sample-text">
+              <span class="sample-title">ナレーション 2</span>
+            </span>
+            <span class="sample-ext" aria-hidden="true">聴く ↗</span>
+          </a>
+        </li>
+        <li class="sample">
+          <a class="sample-link" href="https://drive.google.com/file/d/1M-KaV2GRzgzssQ9owCH8msMVHMix3WTr/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+            <span class="sample-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v13.72L19 12 8 5.14z"/></svg></span>
+            <span class="sample-text">
+              <span class="sample-title">ナレーション 3</span>
+            </span>
+            <span class="sample-ext" aria-hidden="true">聴く ↗</span>
+          </a>
+        </li>
+        <li class="sample">
+          <a class="sample-link" href="https://drive.google.com/file/d/1z1DlzR0UwFOT2X5o0BKouROY44_xhnuq/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+            <span class="sample-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v13.72L19 12 8 5.14z"/></svg></span>
+            <span class="sample-text">
+              <span class="sample-title">ナレーション 4</span>
+            </span>
+            <span class="sample-ext" aria-hidden="true">聴く ↗</span>
+          </a>
+        </li>
+
+        <li class="sample">
+          <a class="sample-link" href="https://drive.google.com/file/d/1cu3e-KJTkjcb5I4GQltjqKJT--698oD5/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+            <span class="sample-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v13.72L19 12 8 5.14z"/></svg></span>
+            <span class="sample-text">
+              <span class="sample-title">予告</span>
+            </span>
+            <span class="sample-ext" aria-hidden="true">聴く ↗</span>
+          </a>
+        </li>
+        <li class="sample sample--wide">
+          <!-- 編集ポイント: YouTube のサムネイルは https://i.ytimg.com/vi/動画ID/maxresdefault.jpg（無い動画は hqdefault.jpg） -->
+          <a class="sample-link sample-link--thumb" href="https://youtu.be/ujjNjz-xotU?si=yCgT00DME3yf3q4G" target="_blank" rel="noopener noreferrer">
+            <span class="thumb">
+              <img src="https://i.ytimg.com/vi/ujjNjz-xotU/maxresdefault.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async"
+                   onerror="if(!this.dataset.fb){this.dataset.fb=1;this.src='https://i.ytimg.com/vi/ujjNjz-xotU/hqdefault.jpg'}else{this.classList.add('is-broken');this.removeAttribute('src')}">
+              <span class="play-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v13.72L19 12 8 5.14z"/></svg></span>
+            </span>
+            <span class="sample-body">
+              <span class="sample-title">『BELLA GAIA』〜美しい地球のシンフォニー〜</span>
+              <span class="sample-cat">プラネタリウム</span>
+              <span class="sample-ext" aria-hidden="true">YouTube で聴く ↗</span>
+            </span>
+          </a>
+        </li>
+      </ul>
+
+      <p class="sample-note">※ YouTube のサンプルは YouTube の再生画面が開きます。環境によっては Google アカウントへのログインを求められることがあります。</p>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       05 朗読・ラジオ
+       編集ポイント: 個別の朗読動画を並べたいときは、下の <div class="podcast"> の前に
+       <a class="video-card"> … </a> を入れる（CSS はそのまま使えます）。
+       サムネイルは https://i.ytimg.com/vi/動画ID/maxresdefault.jpg（無い動画は hqdefault.jpg）。
+       ========================================================= -->
+  <section class="sec" id="reading" aria-labelledby="reading-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-label">05 — Reading &amp; Radio</p>
+        <h2 class="sec-title" id="reading-title">朗読・ラジオ</h2>
+        <p class="sec-lead">YouTube と Podcast で、朗読番組『互ひとみのラジオ』を配信しています。</p>
+      </div>
+
+      <div class="reading">
+        <div class="podcast">
+          <span class="podcast-cover">
+            <img src="images/radio-cover.jpg" alt="" width="480" height="480" loading="lazy" decoding="async">
+          </span>
+          <h3 class="podcast-title">互ひとみのラジオ</h3>
+          <div class="podcast-links">
+            <a class="btn" href="https://open.spotify.com/show/3dOkFTC8z5giLKTqwhocwd?si=fU7F88TdTLeHSJE7prOH7g" target="_blank" rel="noopener noreferrer">Spotify<span class="arrow" aria-hidden="true">↗</span></a>
+            <a class="btn" href="https://podcasts.apple.com/jp/podcast/互ひとみのラジオ/id1715274296" target="_blank" rel="noopener noreferrer">Apple Podcasts<span class="arrow" aria-hidden="true">↗</span></a>
+            <a class="btn" href="https://youtube.com/@tagai_hitomi" target="_blank" rel="noopener noreferrer">YouTube チャンネル<span class="arrow" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       06 執筆
+       ========================================================= -->
+  <section class="sec" id="writing" aria-labelledby="writing-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-label">06 — Writing</p>
+        <h2 class="sec-title" id="writing-title">執筆</h2>
+      </div>
+
+      <!-- 編集ポイント: 連載や記事を増やすときは、このブロックをコピー。
+           左の表紙は note の og:image（マガジンのヘッダー画像）です。 -->
+      <a class="writing-card" href="https://note.com/tagai_hitomino/m/m80100d2c896b" target="_blank" rel="noopener noreferrer">
+        <span class="writing-thumb thumb">
+          <img src="https://assets.st-note.com/production/uploads/images/279260809/e4ee84ca984e6b9d4aec1f57e6df0035.png?fit=bounds&amp;format=jpeg&amp;height=1024&amp;quality=85&amp;width=1024" alt="" width="1024" height="536" loading="lazy" decoding="async"
+               onerror="this.classList.add('is-broken');this.removeAttribute('src')">
+        </span>
+        <div class="writing-body">
+          <span class="writing-kicker">note — 有料マガジン</span>
+          <h3 class="writing-title">ボイスサンプル台本集</h3>
+          <p class="writing-desc">30〜60秒のボイスサンプル用台本をまとめたマガジン。セリフとナレーション、性別を問わず使えます。初回のみ300円（月額ではありません）。商用利用可・クレジット任意・語尾や言い回しの変更可。AI学習・AI音声への使用、再配布はご遠慮いただいています。</p>
+          <span class="writing-go">マガジンを読む <span aria-hidden="true">↗</span></span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       07 お問い合わせ・SNS
+       ========================================================= -->
+  <section class="sec" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-label">07 — Contact</p>
+        <h2 class="sec-title" id="contact-title">お問い合わせ・SNS</h2>
+        <p class="sec-lead">お仕事のご依頼・ご相談は、所属事務所までお願いいたします。</p>
+      </div>
+
+      <div class="contact">
+        <div class="office">
+          <span class="office-label">Agency</span>
+          <h3 class="office-name">大沢事務所</h3>
+          <p class="office-desc">出演・ナレーションのご依頼、取材のご相談は事務所公式ページよりお問い合わせください。</p>
+          <a class="btn" href="https://osawa-inc.co.jp/women/tagaihitomi/" target="_blank" rel="noopener noreferrer">事務所公式ページ<span class="arrow" aria-hidden="true">↗</span></a>
+        </div>
+
+        <div>
+          <p class="sns-label">Follow</p>
+          <!-- 編集ポイント: SNSを増やすときは <a> をコピーして名前とURLを変更 -->
+          <div class="sns">
+            <a href="https://twitter.com/tagai_hitomi" target="_blank" rel="noopener noreferrer"><span class="sns-text"><span class="sns-name">X</span><span class="sns-desc">仕事情報</span></span><span class="sns-arrow" aria-hidden="true">↗</span></a>
+            <a href="https://bsky.app/profile/tagaihitomi.bsky.social" target="_blank" rel="noopener noreferrer"><span class="sns-text"><span class="sns-name">Bluesky</span><span class="sns-desc">日常</span></span><span class="sns-arrow" aria-hidden="true">↗</span></a>
+            <a href="https://www.instagram.com/tagai_hitomi/" target="_blank" rel="noopener noreferrer"><span class="sns-text"><span class="sns-name">Instagram</span><span class="sns-desc">読書と旅行</span></span><span class="sns-arrow" aria-hidden="true">↗</span></a>
+            <a href="https://note.com/tagai_hitomino" target="_blank" rel="noopener noreferrer"><span class="sns-text"><span class="sns-name">note</span><span class="sns-desc">読書と旅行</span></span><span class="sns-arrow" aria-hidden="true">↗</span></a>
+            <a href="https://www.threads.net/@tagai_hitomi?igshid=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener noreferrer"><span class="sns-text"><span class="sns-name">Threads</span></span><span class="sns-arrow" aria-hidden="true">↗</span></a>
+            <a href="https://youtube.com/@tagai_hitomi" target="_blank" rel="noopener noreferrer"><span class="sns-text"><span class="sns-name">YouTube</span></span><span class="sns-arrow" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------------------------------------------------------
+       編集ポイント（新しいセクションの追加用テンプレート）
+       下のコメントを外して中身を書き換えると、新しいセクションが作れます。
+       あわせて、上の追従ナビに <a class="nav-link" href="#new-section">名前</a>
+       を一行追加してください。
+
+  <section class="sec" id="new-section" aria-labelledby="new-section-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-label">08 — New</p>
+        <h2 class="sec-title" id="new-section-title">新しいセクション名</h2>
+        <p class="sec-lead">ここに説明文。</p>
+      </div>
+      <div class="card" style="padding:1.5rem;">ここに内容。</div>
+    </div>
+  </section>
+       --------------------------------------------------------- -->
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <p class="foot-name">互ひとみ</p>
+    <p class="foot-note">© 2026 Tagai Hitomi</p>
+  </div>
+</footer>
+
+<!-- =========================================================
+     写真の拡大表示（ギャラリー用）
+     JavaScript が無効なときは開かないので、レイアウトには影響しません。
+     ========================================================= -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="写真の拡大表示" hidden>
+  <button class="lightbox-btn lightbox-close" type="button" aria-label="閉じる">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <button class="lightbox-btn lightbox-nav lightbox-prev" type="button" aria-label="前の写真">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>
+  </button>
+  <figure class="lightbox-figure">
+    <img id="lightbox-img" alt="">
+    <figcaption class="lightbox-cap" id="lightbox-caption"></figcaption>
+  </figure>
+  <button class="lightbox-btn lightbox-nav lightbox-next" type="button" aria-label="次の写真">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>
+  </button>
+</div>
+
+<script>
+/* =========================================================
+   追従ナビの現在地表示
+   ---------------------------------------------------------
+   ・JavaScript が無効でも、ページの表示は変わりません。
+   ========================================================= */
+(function () {
+  "use strict";
+
+  /* 追従ナビ：いま見ているセクションを強調 */
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav-link[href^="#"]'));
+  var sections = links.map(function (a) {
+    return document.querySelector(a.getAttribute("href"));
+  }).filter(Boolean);
+
+  var navInner = document.querySelector(".nav-inner");
+
+  function setCurrent(id) {
+    links.forEach(function (a) {
+      var on = a.getAttribute("href") === "#" + id;
+      if (on) {
+        a.setAttribute("aria-current", "true");
+        // 現在地が画面外にあるときは、ナビ自身を横にずらして見えるようにする
+        if (navInner) {
+          var box = navInner.getBoundingClientRect();
+          var r = a.getBoundingClientRect();
+          if (r.left < box.left + 8 || r.right > box.right - 8) {
+            var delta = (r.left - box.left) - 16;
+            if (navInner.scrollTo) {
+              try { navInner.scrollTo({ left: navInner.scrollLeft + delta, behavior: "smooth" }); }
+              catch (e) { navInner.scrollLeft = navInner.scrollLeft + delta; }
+            } else {
+              navInner.scrollLeft = navInner.scrollLeft + delta;
+            }
+          }
+        }
+      } else {
+        a.removeAttribute("aria-current");
+      }
+    });
+  }
+
+  // 画面の上から35%の位置に入っているセクションを「現在地」とみなす
+  var ticking = false;
+
+  function updateCurrent() {
+    ticking = false;
+    if (!sections.length) { return; }
+    var line = window.innerHeight * 0.35;
+    var current = sections[0].id;
+    sections.forEach(function (s) {
+      if (s.getBoundingClientRect().top - line <= 0) { current = s.id; }
+    });
+    setCurrent(current);
+  }
+
+  function requestUpdate() {
+    if (!ticking) {
+      ticking = true;
+      window.requestAnimationFrame(updateCurrent);
+    }
+  }
+
+  window.addEventListener("scroll", requestUpdate, { passive: true });
+  window.addEventListener("resize", requestUpdate, { passive: true });
+  updateCurrent();
+
+  /* ナビをタップしたら、その項目が見える位置まで横スクロール */
+  links.forEach(function (a) {
+    a.addEventListener("click", function () {
+      setCurrent(a.getAttribute("href").slice(1));
+      if (a.scrollIntoView) {
+        a.scrollIntoView({ block: "nearest", inline: "center", behavior: "smooth" });
+      }
+    });
+  });
+})();
+
+/* =========================================================
+   ギャラリーの写真を拡大表示する（ライトボックス）
+   ---------------------------------------------------------
+   ・写真の <button class="gallery-open"> を押すと開きます。
+   ・Esc で閉じる、← → で前後の写真へ、背景を押しても閉じます。
+   ・「閉じる」や全体が表示されないときは JavaScript を確認してください。
+   ========================================================= */
+(function () {
+  "use strict";
+
+  var box = document.getElementById("lightbox");
+  if (!box) { return; }
+
+  var triggers = Array.prototype.slice.call(document.querySelectorAll(".gallery-open"));
+  if (!triggers.length) { return; }
+
+  var image = document.getElementById("lightbox-img");
+  var caption = document.getElementById("lightbox-caption");
+  var closeBtn = box.querySelector(".lightbox-close");
+  var prevBtn = box.querySelector(".lightbox-prev");
+  var nextBtn = box.querySelector(".lightbox-next");
+  var index = 0;
+  var lastFocus = null;
+
+  if (triggers.length < 2) {
+    if (prevBtn) { prevBtn.hidden = true; }
+    if (nextBtn) { nextBtn.hidden = true; }
+  }
+
+  function show(i) {
+    index = (i + triggers.length) % triggers.length;
+    var trigger = triggers[index];
+    var source = trigger.querySelector("img");
+    var full = trigger.getAttribute("data-full");
+    image.src = full || (source ? (source.currentSrc || source.src) : "");
+    image.alt = source && source.alt ? source.alt : "";
+    caption.textContent = trigger.getAttribute("data-caption") || "";
+    box.setAttribute("aria-label", image.alt + "（" + (index + 1) + " / " + triggers.length + "）");
+  }
+
+  function open(i) {
+    lastFocus = document.activeElement;
+    show(i);
+    box.hidden = false;
+    document.documentElement.classList.add("is-locked");
+    document.body.classList.add("is-locked");
+    if (closeBtn) { closeBtn.focus(); }
+  }
+
+  function close() {
+    box.hidden = true;
+    document.documentElement.classList.remove("is-locked");
+    document.body.classList.remove("is-locked");
+    if (lastFocus && lastFocus.focus) { lastFocus.focus(); }
+  }
+
+  triggers.forEach(function (trigger, i) {
+    trigger.addEventListener("click", function () { open(i); });
+  });
+
+  if (closeBtn) { closeBtn.addEventListener("click", close); }
+  if (prevBtn) { prevBtn.addEventListener("click", function () { show(index - 1); }); }
+  if (nextBtn) { nextBtn.addEventListener("click", function () { show(index + 1); }); }
+
+  // 背景（写真の外側）を押したら閉じる
+  box.addEventListener("click", function (event) {
+    if (event.target === box) { close(); }
+  });
+
+  // キーボード操作
+  document.addEventListener("keydown", function (event) {
+    if (box.hidden) { return; }
+    if (event.key === "Escape") { close(); return; }
+    if (event.key === "ArrowLeft" && triggers.length > 1) { show(index - 1); return; }
+    if (event.key === "ArrowRight" && triggers.length > 1) { show(index + 1); return; }
+    if (event.key === "Tab" && box.contains(event.target)) {
+      // フォーカスが画面の外に漏れないようにする
+      var focusable = Array.prototype.slice.call(
+        box.querySelectorAll("button:not([hidden])")
+      ).filter(function (el) { return el.offsetParent !== null; });
+      if (!focusable.length) { return; }
+      var first = focusable[0];
+      var last = focusable[focusable.length - 1];
+      if (event.shiftKey && event.target === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && event.target === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    }
+  });
+})();
+
+/* =========================================================
+   ギャラリーの横スクロール（前へ／次へボタン）
+   ---------------------------------------------------------
+   ・写真が画面に収まりきらないときだけ、見出しの右に矢印ボタンを出します
+     （2枚がちょうど収まるときはボタンなし。写真が増えれば自動で出ます）。
+   ・スワイプ／横スクロールだけで見ることもできます。
+   ========================================================= */
+(function () {
+  "use strict";
+
+  var track = document.querySelector(".gallery");
+  var bar = document.querySelector(".gallery-ctrl");
+  if (!track || !bar) { return; }
+
+  var prev = bar.querySelector("[data-gallery-prev]");
+  var next = bar.querySelector("[data-gallery-next]");
+
+  // 写真1枚ぶん（＋すきま）を進む量にする
+  function stepSize() {
+    var item = track.querySelector(".gallery-item");
+    if (!item) { return Math.round(track.clientWidth * 0.8); }
+    var gap = parseFloat(window.getComputedStyle(track).columnGap) || 0;
+    return Math.round(item.getBoundingClientRect().width + gap);
+  }
+
+  function maxScroll() {
+    return track.scrollWidth - track.clientWidth;
+  }
+
+  function update() {
+    var max = maxScroll();
+    var scrollable = max > 2;
+    bar.hidden = !scrollable;
+    if (prev) { prev.disabled = !scrollable || track.scrollLeft <= 2; }
+    if (next) { next.disabled = !scrollable || track.scrollLeft >= max - 2; }
+  }
+
+  function go(direction) {
+    var left = track.scrollLeft + direction * stepSize();
+    if (left < 0) { left = 0; }
+    if (left > maxScroll()) { left = maxScroll(); }
+    if (track.scrollTo) {
+      try { track.scrollTo({ left: left, behavior: "smooth" }); }
+      catch (e) { track.scrollLeft = left; }
+    } else {
+      track.scrollLeft = left;
+    }
+  }
+
+  if (prev) { prev.addEventListener("click", function () { go(-1); }); }
+  if (next) { next.addEventListener("click", function () { go(1); }); }
+
+  track.addEventListener("scroll", update, { passive: true });
+  window.addEventListener("resize", update, { passive: true });
+  window.addEventListener("load", update);
+
+  // 写真をあとから足したとき・並びが変わったときにもボタンの状態を合わせる
+  if (window.MutationObserver) {
+    new MutationObserver(update).observe(track, { childList: true });
+  }
+
+  update();
+})();
+</script>
+</body>
+</html>
